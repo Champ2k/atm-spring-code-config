@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ATMConfig {
     @Bean
-    public DataSource dataSource() {
-        return new DataSourceDB();
+    public DataSourceFile dataSource() {
+        return new DataSourceFile("customers.txt");
     }
 
     @Bean

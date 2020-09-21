@@ -1,8 +1,12 @@
 package atm;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * An ATM that accesses a bank.
  */
+
 public class ATM {
 	private Bank bank;
 	private Customer loginCustomer;
